@@ -148,6 +148,10 @@ p.um {
 	font-weight: bold;
 }
 
+.bird {
+	display: none;
+}
+
 /* for responsive design*/
 
 @media screen and (min-width:900px){
@@ -208,6 +212,14 @@ p.um {
  		text-align: left;
  	}
 
+ 	.bird{
+ 		display: block;
+ 		width: 80%;
+ 		margin: auto;
+ 		margin-top: 15px;
+ 		margin-bottom: 15px;
+ 		border: solid 2px black;
+ 	}
 
 
 
