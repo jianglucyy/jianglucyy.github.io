@@ -23,10 +23,6 @@ nav a{
 	padding: 5px 0px 12px 0px;
 }
 
-/*nav a:hover {
-	color: #fcff40 #FF69B4
-}*/
-
 .current{
 	color: #111111;
 	background: #eeeeee;
@@ -97,6 +93,9 @@ div.content a:hover{
 	color: #fcff40 /*#FF69B4*/;
 }
 
+div.goals {
+	line-height: 1.6;
+}
 
 
 /* for Resume page */
@@ -145,6 +144,9 @@ section.res{
 	width: 90%;
 }
 
+p.um {
+	font-weight: bold;
+}
 
 /* for responsive design*/
 
