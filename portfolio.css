@@ -1,0 +1,214 @@
+/* For all pages and general formatting */
+
+header h1{
+	text-align: center;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-size: 3em;
+}
+
+body{
+	background-color: #2a5682 /*#1e90ff*/;
+}
+
+nav a{
+	display: block;
+	text-align: center;
+	color: #FFFFFF;
+	background: transparent;
+	text-decoration: none;
+	height: 20px;
+	padding-bottom:15px;
+	font-size: 1.5em;
+	padding: 5px 0px 12px 0px;
+}
+
+/*nav a:hover {
+	color: #fcff40 #FF69B4
+}*/
+
+.current{
+	color: #111111;
+	background: #eeeeee;
+	text-transform: uppercase;
+	border-radius: 4px;
+}
+
+/* For home page */
+
+img.me {
+	display: block;
+	width: 50%;
+	max-width: 400px;
+	margin: auto;
+	border: black solid 2px;
+}
+
+.content {
+		padding-left: 15%;
+		padding-right: 15%;
+		color: #FFFFFF;
+		font-size: 1em;
+}
+
+div.content a{
+		color: #FFFFFF;
+}
+
+div.content a:hover{
+		color: #fcff40/*#FF69B4*/;
+}
+
+/* for about page*/
+
+.right{
+	display: block;
+	float: right;
+	margin: auto;
+}
+
+.left {
+	display: block;
+	background-color: transparent;
+	float: left;
+	color: #FFFFFF;
+	padding-left: 20px;
+	padding-right: 30px;
+	font-size: 1.10em;
+}
+
+.right img{
+	display: block;
+	width: 70%;
+	margin: auto;
+	margin-bottom: 10px;
+	border: black solid 2px;
+}
+
+.left h2{
+	text-decoration: underline;
+}
+
+.left a {
+	color: #FFFFFF;
+}
+
+.left a:hover{
+	color: #fcff40 /*#FF69B4*/;
+}
+
+
+
+/* for Resume page */
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eeeeee;
+  color: #444444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: center;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+section.res{
+	margin: auto;
+	margin-top: 15px;
+	width: 90%;
+}
+
+
+/* for responsive design*/
+
+@media screen and (min-width:900px){
+	div.content{
+		font-size: 1.5em;
+	}
+
+	header h1{
+		font-size: 2em;
+	}
+
+	nav a:hover {
+	color: #fcff40
+}
+	.navigation a{
+    float: none;
+    display: inline-block;
+    width: 31%;
+    text-align: center;
+    padding-left: 15px;
+	}
+
+    .current{
+    background: transparent;
+    color: #FFF000;
+    }
+
+  	.header {
+    float: none;
+  	}
+
+	.right{
+	display: block;
+	float: left;
+	width: 35%;
+	}
+
+	.left {
+	display: block;
+	width: 55%;
+	background-color: transparent;
+	float: left;
+	height: 100vh;
+	color: #FFFFFF;
+	padding-left: 20px;
+	}
+
+	.right img {
+	display: block;
+	width: 70%;
+	margin: 15px;
+	border:1px solid #111111;
+  	margin-left: auto;
+  	margin-right: auto;
+ 	}
+
+ 	.accordion{
+ 		text-align: left;
+ 	}
+
+
+
+
+}
+
+
