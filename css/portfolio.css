@@ -24,7 +24,7 @@ nav a{
 }
 
 nav a:hover {
-	color: #FF69B4;
+	color: #fcff40 /*#FF69B4*/;
 }
 
 
@@ -58,7 +58,7 @@ div.content a{
 }
 
 div.content a:hover{
-		color: #FF69B4;
+		color: #fcff40/*#FF69B4*/;
 }
 
 /* for about page*/
@@ -96,7 +96,7 @@ div.content a:hover{
 }
 
 .left a:hover{
-	color: #FF69B4;
+	color: #fcff40 /*#FF69B4*/;
 }
 
 
