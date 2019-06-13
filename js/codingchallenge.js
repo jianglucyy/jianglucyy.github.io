@@ -1,20 +1,47 @@
+/*set to pen down first*/
 var md = true;
+
 var colorBlue = "#4169E1";
 var colorGreen = "#008000";
 var colorRed = "#FF0000";
 var colorYellow = "#FFFF00";
 var colorPen = "#FF0000";
+var canvas = document.getElementById('drawCanvas');
 
-
-var canvas = document.getElementById('a');
+/*get Mouse position*/
 canvas.addEventListener('mousemove', 
 	function(evt){
-		var mousePos = getMousePos(canvas, evt);
-		var posx = mousePos.x;
-		var posy = mousePos.y;
+		var mouseLocation = getMouseLocation(canvas, evt);
+		/*x and y coordinates of the mouse*/
+        var posx = mouseLocation.x;
+		var posy = mouseLocation.y;
+        /*actually draw*/
 		draw(canvas, posx, posy);
 	});
 
+
+function getMouseLocation(canvas, evt){
+    /*returns the size of an element and its position relative to the viewport*/
+    var rect = canvas.getBoundingClientRect();
+    return{
+    /*mouse position to be center of the box*/
+        x: evt.clientX - 19,
+        y: evt.clientY - 16
+    };
+}
+
+/*drawing function*/
+function draw(canvas, posx, posy){
+    /*provides objects, methods, and properties to draw and manipulate graphics on a canvas drawing surface*/
+    var ctx = canvas.getContext('2d');
+    /*if pen down, draw*/
+    if(md){
+        ctx.fillStyle = colorPen;
+        ctx.fillRect(posx, posy, 30, 30);
+    }
+}
+
+/*make the heigh and width 80% of the window size*/
 canvas.height=window.innerHeight*.8;
 canvas.width=window.innerWidth*.8;
 
@@ -41,6 +68,7 @@ document.body.onkeydown = function(b){
     	colorPen = colorYellow;
     }
     else if(b.keyCode == 32){
+        /*again, provides objects, methods, and properties to draw and manipulate graphics on a canvas drawing surface*/
         var ctx = canvas.getContext('2d');
         ctx.clearRect(0,0,3000,3000)
         ctx.restore();
@@ -64,31 +92,15 @@ var defaultColor = "#000000";
 
 window.addEventListener("load", startup, false);
 function startup() {
-  colorPicker = document.querySelector("#colorPicker");
+  /*have the colorPicker show black first*/ 
+  colorPicker = document.querySelector("#colorPicker");
   colorPicker.value = defaultColor;
-  colorPicker.addEventListener("input", updateColor, false);
-  colorPicker.select();
+  /*change the pen color on input from colorPicker*/
+  colorPicker.addEventListener("input", updateColor, false);
 }
+/*take value of the new input color and change the pen color to that value*/
 function updateColor(event) {
-    colorPicker.value = event.target.value;
-    colorPen = colorPicker.value;
-}
-
-
-/*drawing*/
-function getMousePos(canvas, evt){
-	var rect = canvas.getBoundingClientRect();
-	return{
-		x: evt.clientX - 19,
-		y: evt.clientY - 16
-	};
-}
-function draw(canvas, posx, posy){
-	var ctx = canvas.getContext('2d');
-	if(md){
-		ctx.fillStyle = colorPen;
-		ctx.fillRect(posx, posy, 30, 30);
-	}
+    colorPen = event.target.value;
 }
 
 
