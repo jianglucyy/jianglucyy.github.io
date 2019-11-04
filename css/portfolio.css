@@ -6,9 +6,11 @@ header h1{
 	text-transform: uppercase;
 	font-size: 3em;
 }
+
 body{
 	background-color: #2a5682 /*#1e90ff*/;
 }
+
 nav a{
 	display: block;
 	text-align: center;
@@ -20,6 +22,7 @@ nav a{
 	font-size: 1.5em;
 	padding: 5px 0px 12px 0px;
 }
+
 .current{
 	color: #111111;
 	background: #eeeeee;
@@ -28,6 +31,7 @@ nav a{
 }
 
 /* For home page */
+
 img.me {
 	display: block;
 	width: 50%;
@@ -35,24 +39,30 @@ img.me {
 	margin: auto;
 	border: black solid 2px;
 }
+
 .content {
 		padding-left: 15%;
 		padding-right: 15%;
 		color: #FFFFFF;
 		font-size: 1em;
 }
+
 div.content a{
 		color: #FFFFFF;
 }
+
 div.content a:hover{
 		color: #fcff40/*#FF69B4*/;
 }
+
 /* for about page*/
+
 .right{
 	display: block;
 	float: right;
 	margin: auto;
 }
+
 .left {
 	display: block;
 	background-color: transparent;
@@ -62,6 +72,7 @@ div.content a:hover{
 	padding-right: 30px;
 	font-size: 1.10em;
 }
+
 .right img{
 	display: block;
 	width: 70%;
@@ -69,15 +80,19 @@ div.content a:hover{
 	margin-bottom: 10px;
 	border: black solid 2px;
 }
+
 .left h2{
 	text-decoration: underline;
 }
+
 .left a {
 	color: #FFFFFF;
 }
+
 .left a:hover{
 	color: #fcff40 /*#FF69B4*/;
 }
+
 div.goals {
 	line-height: 1.6;
 }
@@ -92,14 +107,6 @@ div.goals {
   cursor: pointer;
   padding: 18px;
   width: 100%;
-.button {
-  background-color: #2a5682;
-  border: white;
-  border-radius: 4px;
-  border: 1px solid;
-  color: #FFFFFF;
-  padding: 15px 0px;
-  width: 150px;
   text-align: center;
   border: none;
   outline: none;
@@ -125,18 +132,10 @@ div.goals {
   color: #777;
   float: right;
   margin-left: 5px;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin-left: 23%;
 }
 
 .active:after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
-.socialmedia a:hover{
-	background-color: #FFFFFF;
-	color: #2a5682;
-	border: white;
 }
 
 section.res{
@@ -159,9 +158,11 @@ p.um {
 	div.content{
 		font-size: 1.5em;
 	}
+
 	header h1{
 		font-size: 2em;
 	}
+
 	nav a:hover {
 	color: #fcff40
 }
@@ -172,10 +173,12 @@ p.um {
     text-align: center;
     padding-left: 15px;
 	}
+
     .current{
     background: transparent;
     color: #fcff40;
     }
+
   	.header {
     float: none;
   	}
