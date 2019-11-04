@@ -1,42 +1,17 @@
-/* for home page*/
+/* For all pages and general formatting */
 
-.right{
-	display: block;
-	float: right;
-	margin: auto;
-}
-
-.left {
-	display: block;
-	background-color: transparent;
-	float: left;
+header h1{
+	text-align: center;
 	color: #FFFFFF;
-	padding-left: 20px;
-	padding-right: 30px;
-	font-size: 1.10em;
+@@ -26,7 +24,6 @@ nav a{
+.current{
+	color: #111111;
+	background: #eeeeee;
+	text-transform: uppercase;
+	border-radius: 4px;
 }
 
-.right img{
-	display: block;
-	width: 70%;
-	margin: auto;
-	margin-bottom: 10px;
-	border: black solid 2px;
-}
-
-.left h2{
-	text-decoration: underline;
-}
-
-.left a {
-	color: #FFFFFF;
-}
-
-.left a:hover{
-	color: #fcff40 /*#FF69B4*/;
-}
-
-div.goals {
+@@ -97,60 +94,27 @@ div.goals {
 	line-height: 1.6;
 }
 
@@ -50,6 +25,14 @@ div.goals {
   cursor: pointer;
   padding: 18px;
   width: 100%;
+.button {
+  background-color: #2a5682;
+  border: white;
+  border-radius: 4px;
+  border: 1px solid;
+  color: #FFFFFF;
+  padding: 15px 0px;
+  width: 150px;
   text-align: center;
   border: none;
   outline: none;
@@ -75,10 +58,18 @@ div.goals {
   color: #777;
   float: right;
   margin-left: 5px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 23%;
 }
 
 .active:after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
+.socialmedia a:hover{
+	background-color: #FFFFFF;
+	color: #2a5682;
+	border: white;
 }
 
 section.res{
@@ -95,22 +86,13 @@ p.um {
 	display: none;
 }
 
-@media screen and (min-width:900px){
+/* for responsive design*/
 
- 	.accordion{
- 		text-align: left;
- 	}
+@@ -183,46 +147,5 @@ p.um {
+    float: none;
+  	}
 
- 	.bird{
- 		display: block;
- 		width: 80%;
- 		margin: auto;
- 		margin-top: 15px;
- 		margin-bottom: 15px;
- 		border: solid 2px black;
- 	}
-
- 	.right{
+	.right{
 	display: block;
 	float: left;
 	width: 35%;
@@ -134,3 +116,20 @@ p.um {
   	margin-left: auto;
   	margin-right: auto;
  	}
+
+ 	.accordion{
+ 		text-align: left;
+ 	}
+
+ 	.bird{
+ 		display: block;
+ 		width: 80%;
+ 		margin: auto;
+ 		margin-top: 15px;
+ 		margin-bottom: 15px;
+ 		border: solid 2px black;
+ 	}
+
+
+
+}
